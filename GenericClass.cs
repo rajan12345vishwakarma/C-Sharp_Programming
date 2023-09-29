@@ -9,13 +9,12 @@ namespace Practice
 {
     class Generics<T>
     {
-        public T Sum(int a, int b)
+        public T Sum(T a, T b)
         {
             dynamic d1 = a; dynamic d2 = b;
             return (d1 + d2);
         }
     }
-
     class Program
     {
        
