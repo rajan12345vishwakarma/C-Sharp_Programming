@@ -40,33 +40,21 @@ namespace Practice
             customers.Add(c2);
             customers.Add(c3);
             customers.Add(c4);
-            
+            List<Customer> customer = new List<Customer> { c1, c2, c3, c4 };
 
             List<Users> users = new List<Users>();
 
-            for (int i = 0; i < customers.Count; i++)
-            {
-                users.Add(
-
-                users[i].Name = customers[i].Name,
-                users[i].Address = customers[i].Address,
-                users[i].City = customers[i].City,
-                users[i].Age = customers[i].Age
-                );
-            }
-            /*
             foreach (var item in customers)
             {
-                Console.WriteLine(item.Name + " " + item.City + " " + item.Address + " " + item.Age);
-            }
-            List<Customer> cust = new List<Customer> { c1, c2, c3,c4 };
-            Console.WriteLine("\n\n\n");
+                var data = new Users();
+                data.Name = item.Name;
+                data.Address = item.Address;
+                data.City = item.City;
+                data.Age = item.Age;
 
-            foreach (var item in cust)
-            {
-                Console.WriteLine(item.Name + " " + item.City + " " + item.Address + " " + item.Age);
+                users.Add(data);
+
             }
-            */
 
             foreach (var item in users)
             {
