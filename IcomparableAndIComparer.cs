@@ -42,8 +42,8 @@ namespace Practice
     {
         public int Compare(Customer x, Customer y)
         {
-            if (x.Age > y.Age) return 1;
-            else if (x.Age < y.Age) return -1;
+            if (x.Id > y.Id) return 1;
+            else if (x.Id < y.Id) return -1;
             else return 0;
         }
     }
@@ -71,7 +71,7 @@ namespace Practice
 
             List<Users> users = new List<Users>();
 
-            customers.Sort(obj);
+            //customers.Sort(obj);
             
 
             foreach (var item in customers)
