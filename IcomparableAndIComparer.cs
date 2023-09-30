@@ -63,7 +63,7 @@ namespace Practice
             customers.Add(c3);
             customers.Add(c4);
 
-            customers.Sort();
+            //customers.Sort();
 
             List<Customer> customer = new List<Customer> { c1, c2, c3, c4 };
 
@@ -72,7 +72,7 @@ namespace Practice
             List<Users> users = new List<Users>();
 
             //customers.Sort(obj);
-            
+            customers.Sort(1, 3, obj); 
 
             foreach (var item in customers)
             {
@@ -84,7 +84,6 @@ namespace Practice
                 data.Id = item.Id;
 
                 users.Add(data);
-
             }
             foreach (var item in customers)
             {
