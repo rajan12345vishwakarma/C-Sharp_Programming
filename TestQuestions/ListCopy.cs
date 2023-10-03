@@ -98,6 +98,20 @@ namespace Practice
                 users.Add(data);
             }
             */
+              /*
+           foreach (var item in customers)
+            {
+                 users.Add(new Users
+                {
+                    Id = customer.Id,
+                    Name = customer.Name,
+                    Age = customer.Age,
+                    City = customer.City,
+                    Address = customer.Address
+                });
+            }
+            }
+            */
             foreach (var item in customers)
             {
                 Console.WriteLine(item.Name + " " + item.City + " " + item.Address + " " + item.Age + " " + item.Id);
