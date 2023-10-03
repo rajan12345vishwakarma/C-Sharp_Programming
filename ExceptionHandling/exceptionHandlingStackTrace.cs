@@ -38,7 +38,7 @@ namespace Practice
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
         public static void test2()
@@ -50,10 +50,46 @@ namespace Practice
             catch (Exception ex)
             {
 
-                throw ex;
+                throw;
             }
         }
         public static void test3()
+        {
+            try
+            {
+                test4();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public static void test4()
+        {
+            try
+            {
+                test5();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public static void test5()
+        {
+            try
+            {
+                test6();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public static void test6()
         {
             try
             {
