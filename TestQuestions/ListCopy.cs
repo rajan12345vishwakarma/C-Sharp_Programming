@@ -110,7 +110,7 @@ namespace Practice
                     Address = customer.Address
                 });
             }
-            }
+            
             */
             foreach (var item in customers)
             {
