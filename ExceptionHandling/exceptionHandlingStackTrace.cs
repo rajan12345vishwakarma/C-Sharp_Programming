@@ -24,7 +24,6 @@ namespace Practice
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-               
             }
            
             Console.ReadLine();
@@ -37,7 +36,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -49,7 +47,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -61,7 +58,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -73,7 +69,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -85,7 +80,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -100,7 +94,6 @@ namespace Practice
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
