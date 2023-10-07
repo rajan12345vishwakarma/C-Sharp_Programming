@@ -101,6 +101,6 @@ namespace Practice
 }
 
 /*
- if we throw ex then it stops stack trace and if we don't throw ex then 
+ if we throw ex then it stops stack trace and if we only throw without ex then 
  it print all the stack trace if any error comes.
  */
