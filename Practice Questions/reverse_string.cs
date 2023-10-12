@@ -1,16 +1,19 @@
 // first method
-public static void Main()
+ public static void Main()
  {
      string s = "when you talk you are only";
      string str = string.Empty;
+     Console.WriteLine(s);
      for (int i = 0; i < s.Length; i++)
      {
          str += s[i];
-         if (s[i] == ' ')
+         if (s[i] == ' ' || i == s.Length -1)
          {
-             for (int j = str.Length - 1; j >= 0 && i < s.Length ; j--)
+             if (i == s.Length - 1) Console.Write(" ");
+
+             for (int j = str.Length - 1; j >= 0 && i < s.Length; j--)
              {
-                 Console.Write(str[j]);
+                  Console.Write(str[j]);
              }
              str = string.Empty;
          }
