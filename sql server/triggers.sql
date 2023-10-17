@@ -14,6 +14,14 @@ as begin
  select * from deleted
  end
 
+ create trigger tr_tbl_Update_Employees
+ on tbl_Employees
+ after update
+ as begin
+ select * from deleted
+ select * from inserted
+ end
+
  delete  from tbl_Employees where Id = 1
 
  create table audit_tbl_Employee
