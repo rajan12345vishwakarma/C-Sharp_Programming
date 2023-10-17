@@ -1,15 +1,22 @@
-CREATE PROCEDURE CREATE_TABLE @TblName varchar(50)
+-- stored procedure for create a table
+create procedure create_table @tbl_name varchar(20)
 as begin
 declare @query varchar(max)
-set @query = 'create table' + @TblName + '(Id int identity(100,1)
-  Name varchar(20),
-  Email varchar(20),
-  City varchar(20),
-  Pincode int)'
-  execute(@query)
-  end
-  execute CREATE_TABLE 'NewTable'
-  
+set @query = 'create table' + @tbl_name + '(
+                  Id int, Name varchar(20), Age int
+                )'
+     exec(@query)
+	end
+	
+
+	exec create_table '[dbo].[workerslnt]'
+
+	select * from workerslnt
+
+
+	insert into workerslnt values(1,'Hero',12)
+
+  -- second method for create a new table
   CREATE PROCEDURE [dbo].[Pcreate]
     @name VARCHAR(50),
     @namefood VARCHAR(50),
