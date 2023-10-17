@@ -17,14 +17,10 @@ set @query = 'create table' + @tbl_name + '(
 	insert into workerslnt values(1,'Hero',12)
 
   -- second method for create a new table
-  CREATE PROCEDURE [dbo].[Pcreate]
-    @name VARCHAR(50),
-    @namefood VARCHAR(50),
-    @restaurantname VARCHAR(50),
-    @pricefood FLOAT,
-    @address VARCHAR(50)
+  
+CREATE PROCEDURE [dbo].[Pcreate] @name varchar(20)
 AS
-BEGIN   
+BEGIN  
     CREATE TABLE [dbo].[@name]
     (
         [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
@@ -35,5 +31,6 @@ BEGIN
     )
 END
 
-execute pcreate 'Rajan','Dahi','dhaba',120,'Meerut'
+execute pcreate 'Rajan'
 select * from [dbo].[@name]
+insert into [dbo].[@name] values('Burger','Dhaba','110','Delhi')
