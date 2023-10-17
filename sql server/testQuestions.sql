@@ -34,3 +34,26 @@ END
 execute pcreate 'Rajan'
 select * from [dbo].[@name]
 insert into [dbo].[@name] values('Burger','Dhaba','110','Delhi')
+
+
+-- create a procedure to update a table
+
+create procedure updateEmployees 
+@Id int, @FirstName varchar(50) = default, @LastName varchar(20) = default,
+@Location varchar(20) = default, @Gender varchar(50) = default, @Salary int = default
+as begin
+update tbl_Employees 
+set FirstName = @FirstName where @FirstName is not null and Id = @Id
+update tbl_Employees
+set LastName = @LastName where @LastName is not null and Id = @Id
+update tbl_Employees
+set Location = @Location where @Location is not null and Id = @Id
+update tbl_Employees
+set Gender = @Gender where @Gender is not null and Id = @Id
+update tbl_Employees
+set Salary = @Salary where @Salary is not null and Id = @Id
+end
+
+exec updateEmployees 2,null,'Singh','Sarojni Nagar','Male',null
+select * from tbl_Employees
+
